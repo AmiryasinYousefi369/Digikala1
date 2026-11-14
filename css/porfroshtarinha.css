@@ -1,0 +1,229 @@
+/* فونت و تنظیمات کلی */
+@font-face {
+  font-family: digikala;
+  src: url(./font/Digikala-Regular.eot);
+  src: url(./font/Digikala-Regular.ttf);
+  src: url(./font/Digikala-Regular.woff);
+  src: url(./font/Digikala-Regular.woff2);
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "digikala";
+  text-decoration: none;
+}
+
+/* بخش دسته‌بندی محصولات */
+.catgory {
+  width: 1331px;
+  height: 350px;
+  margin: 30px 0px 40px 0px;
+}
+
+.catgory-p p {
+  color: black;
+  font-family: "font";
+  margin-top: 30px;
+  margin-bottom: 15px;
+  margin-right: 16px;
+  font-size: 22px;
+}
+
+.catgory-products {
+  display: flex;
+  justify-content: center;
+  gap: 59px;
+}
+
+.catgory-product img {
+  width: 90px;
+  height: 90px;
+}
+
+.catgory-product {
+  margin-top: 20px;
+}
+
+.catgory-product p {
+  font-family: "font";
+  color: black;
+  font-size: 12px;
+  text-align: center;
+}
+
+.catgory-product a {
+  text-decoration: none;
+}
+
+/* بخش محبوب‌ترین برندها */
+.pbrx-section {
+  width: 100%;
+  max-width: 1300px;
+  height: 220px;
+  border: 1px solid #dedfe0;
+  margin: 30px auto;
+  border-radius: 15px;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+.pbrx-head {
+  display: flex;
+  margin: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+.pbrx-title p {
+  color: black;
+  font-size: 20px;
+  margin-right: 11px;
+}
+
+.pbrx-swiper {
+  width: 100%;
+  height: 300px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+.pbrx-swiper .swiper-slide {
+  width: 90px !important;
+  height: 125px !important;
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #dedfe0;
+  border-radius: 8px;
+  background: #fff;
+  padding: 10px;
+  margin: 10px;
+}
+
+.pbrx-item-img img {
+  width: 100%;
+  max-width: 165px;
+  height: auto;
+  object-fit: contain;
+}
+.pbrx-item-name {
+  font-size: 13px;
+  margin: 0 8px;
+  text-align: justify;
+  opacity: 0.8;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.pbrx-item-name p {
+  color: black;
+  text-align: center;
+}
+
+/* اسلایدر قرمز */
+.product-swiper-red {
+  width: 100%;
+  height: 350px;
+  padding: 10px;
+}
+.product-swiper-red .swiper-slide {
+  height: 100%;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.slider-red-left-product-img {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-red-left-product-img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.slider-red-left-product-cap {
+  margin-top: 10px;
+  font-size: 13px;
+  height: 40px;
+  overflow: hidden;
+}
+.slider-red-left-product-real-price {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.slider-red-left-product-real-price b {
+  background: #ef394e;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+.slider-red-left-product-real-price del {
+  color: #999;
+  font-size: 12px;
+}
+
+.slider-red-left-product-oof-price {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  gap: 2px !important;
+  margin-top: 5px !important;
+  font-weight: bold !important;
+  font-size: 16px !important;
+  width: 100% !important;
+}
+.slider-red-left-product-oof-price img {
+  width: 14px !important;
+  height: 14px !important;
+  max-width: 14px !important;
+  object-fit: contain !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+}
+
+/* حذف فاصله اضافی زیر هدر */
+.header {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+.header-menu {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  border-bottom: none !important;
+}
+.header-menu-center {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+.wrapper {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* مخفی کردن فلش‌های اسلایدر و تنظیمات متن ویتامین */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  display: none;
+}
+.vitamin-product-cap p {
+  color: black;
+  text-align: center;
+}
+.vitamins-head-p p {
+  font-size: 20px;
+}

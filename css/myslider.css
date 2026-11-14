@@ -1,0 +1,135 @@
+/* تنظیمات کلی */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+* a {
+  text-decoration: none;
+  color: black;
+}
+
+/* کادر ویتامین‌ها */
+.vitamins {
+  width: 100%;
+  max-width: 1300px;
+  height: auto;
+  border: 1px solid #dedfe0;
+  margin: 30px auto;
+  border-radius: 15px;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+.vitamins-head {
+  display: flex;
+  margin: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vitamins-head-p p {
+  color: black;
+  font-size: 23px;
+  margin-right: 11px;
+}
+
+.vitamins-head-bottom p {
+  color: gray;
+  font-size: 13px;
+  margin: -8px 27px 10px;
+}
+
+/* اسلایدر محصولات */
+swiper-container {
+  width: 100%;
+  height: 300px;
+  margin: 20px auto;
+  display: block;
+}
+
+swiper-slide {
+  width: 165px !important;
+  height: 275px !important;
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #dedfe0;
+  border-radius: 8px;
+  background: #fff;
+  margin: 0 10px;
+}
+
+/* محتوای کارت محصول: تصویر، نام و قیمت */
+.vitamin-product-img img {
+  width: 100%;
+  max-width: 165px;
+  height: auto;
+  object-fit: contain;
+}
+
+.vitamin-product-cap {
+  font-size: 13px;
+  margin: 0px 8px;
+  text-align: justify;
+  opacity: 0.8;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.vitamin-product-real-price {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  margin: 0px 8px;
+}
+
+.vitamin-product-real-price b {
+  background-color: #d32f2f;
+  color: white;
+  width: 34px;
+  height: 19px;
+  border-radius: 13px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.vitamin-product-off-price {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2px;
+  margin: 6px 16px;
+}
+
+.vitamin-product-off-price img {
+  width: 14px !important;
+  height: 14px !important;
+  object-fit: contain;
+}
+
+/* دکمه‌های اضافه کردن */
+.append-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.append-buttons button {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #007aff;
+  color: #007aff;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin: 0 10px;
+  font-size: 13px;
+}

@@ -1,0 +1,138 @@
+/* تنظیمات کلی و فونت */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: font;
+  src:
+    url("../fonts/Digikala-Regular.woff2") format("woff2"),
+    url("../fonts/Digikala-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+body {
+  font-family: "font", sans-serif;
+}
+
+/* کادر پرفروش‌ترین‌ها */
+.best-sellers {
+  width: 100%;
+  max-width: 1305px;
+  height: 405px;
+  border: 1px solid #dedfe0;
+  border-radius: 15px;
+  margin: 15px auto;
+  overflow: hidden;
+}
+
+.best-sellers-top p {
+  color: black;
+  font-family: "font";
+  font-weight: bold;
+  font-size: 20px;
+  margin: 19px 22px;
+}
+
+/* ناحیه اسلایدر */
+.bestseller-slider-area {
+  width: 100%;
+  height: 320px;
+  position: relative;
+  direction: rtl;
+}
+
+.bestseller-swiper {
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+}
+
+/* هر اسلاید: عکس، عنوان و شماره */
+.bestseller-swiper .bestseller-slide {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 10px;
+  height: auto !important;
+  padding: 5px;
+}
+
+.bestseller-swiper .bestseller-slide img {
+  width: 85px !important;
+  height: 85px !important;
+  flex-shrink: 0 !important;
+  object-fit: contain;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+}
+
+.bestseller-swiper .bestseller-slide .bestseller-product-title {
+  flex: 1;
+  min-width: 0;
+  font-family: "font", sans-serif;
+  font-size: 12px;
+  line-height: 22px;
+  color: #333;
+  margin: 0;
+  text-align: right;
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 2 !important;
+  line-clamp: 2 !important;
+  overflow: hidden !important;
+}
+
+.bestseller-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background-color: #ec0f2c;
+  color: white;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: bold;
+  margin-left: 6px;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+/* دکمه‌های قبلی و بعدی */
+.bestseller-next,
+.bestseller-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bestseller-next {
+  left: 8px;
+  right: auto;
+}
+
+.bestseller-prev {
+  right: 8px;
+  left: auto;
+}
+
+.bestseller-next.swiper-button-disabled,
+.bestseller-prev.swiper-button-disabled {
+  opacity: 0;
+  pointer-events: none;
+}

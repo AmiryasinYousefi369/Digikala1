@@ -1,0 +1,274 @@
+/* ==================== ریست و تنظیمات عمومی ==================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* تعریف فونت */
+@font-face {
+  font-family: "Digikala";
+  src: url("../font/Digikala-Regular.eot");
+  src:
+    url("../font/Digikala-Regular.ttf") format("truetype"),
+    url("../font/Digikala-Regular.woff") format("woff"),
+    url("../font/Digikala-Regular.woff2") format("woff2");
+}
+
+:root {
+  --font-family: "Digikala", sans-serif;
+  --text-color: #3f4064;
+  --muted-color: #62666d;
+  --border-color: #e0e0e2;
+  --background-color: #f0f0f1;
+  --primary-color: #ef4056;
+}
+
+/* اعمال فونت به کل صفحه (همه عناصر) */
+body,
+button,
+input,
+textarea,
+a,
+p,
+span,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+del,
+b,
+pre {
+  font-family: var(--font-family) !important;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* اصلاح رَپر اصلی */
+.wrapper {
+  width: 100%;
+  height: auto !important;
+  overflow: visible;
+}
+
+/* تنظیمات پایه اسلایدرها */
+.swiper-wrapper {
+  border-radius: 5px;
+}
+
+/* استایل کارت‌های محصولات */
+.slider-red-left,
+.slider-green-left {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.product-swiper-red,
+.product-swiper-green {
+  width: 100%;
+  height: 320px !important;
+  padding: 10px;
+}
+
+.product-swiper-red .swiper-slide,
+.product-swiper-green .swiper-slide {
+  height: 280px !important;
+  width: 170px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+/* استایل عکس و متن داخل کارت‌ها */
+.slider-red-left-product-img {
+  width: 100%;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-red-left-product-img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.slider-red-left-product-cap {
+  margin-top: 10px;
+  font-size: 13px;
+  height: 36px;
+  overflow: hidden;
+  text-align: right;
+}
+
+/* ==================== اصلاح قطعی قیمت و آیکون تومان ==================== */
+
+/* والدِ قیمت‌ها */
+.slider-red-left-product-oof-price,
+.vitamin-product-off-price {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  gap: 2px !important;
+  margin-top: 8px !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  height: 24px !important;
+}
+
+/* استایل عدد قیمت (بزرگ و پررنگ) */
+.slider-red-left-product-oof-price span,
+.vitamin-product-off-price span {
+  font-size: 18px !important;
+  font-weight: bold !important;
+  color: #3f4064 !important;
+  line-height: 1 !important;
+  margin-right: 50px !important;
+  padding: 0 !important;
+  display: inline-block !important;
+}
+
+/* استایل عکس (آیکون) تومان (کوچک و متناسب) */
+.slider-red-left-product-oof-price img,
+.vitamin-product-off-price img {
+  width: 14px !important;
+  height: 14px !important;
+  object-fit: contain !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+}
+
+/* اصلاح قیمت قبلی (خط‌خورده) */
+.slider-red-left-product-real-price {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin-top: 6px !important;
+  padding: 0 !important;
+  height: 20px !important;
+}
+
+.slider-red-left-product-real-price b {
+  background: #ef394e !important;
+  color: #fff !important;
+  padding: 2px 6px !important;
+  border-radius: 10px !important;
+  font-size: 12px !important;
+  white-space: nowrap !important;
+  margin: 0 !important;
+}
+
+.slider-red-left-product-real-price del {
+  color: #999 !important;
+  font-size: 12px !important;
+  margin: 0 !important;
+  text-decoration: line-through !important;
+}
+/* ریسپانسیو */
+/* ===== ریست پایه ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* جلوگیری از اسکرول افقی */
+}
+
+/* ===== تصاویر و مدیا ریسپانسیو ===== */
+img,
+video,
+iframe,
+svg,
+canvas {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== جلوگیری از سرریز متن‌های طولانی ===== */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* ===== کانتینر اصلی ===== */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* ===== گرید ریسپانسیو ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* ===== فلکس ریسپانسیو ===== */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* ===== جدول ریسپانسیو ===== */
+.table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ===== مدیا کوئری برای موبایل ===== */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
